@@ -188,56 +188,69 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           </div>
         </div>
-        <div class="row">
-          <div class="col-md-4">
+        <!-- <div class="panel-group">
+          <div class="panel panel-default">
             <div class="service-box">
-              <div class="service-ico">
-                <img src="assets/img/20200616_152013.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Raylib</h2>
-                <p class="s-description text-center">
-                  When I started the project, I planned to use an OpenGL wrapper library called Raylib to build the 
-                  project. It even came with a sample Julia set shader, so I figured it would be an easy adaptation.
-                  Unfortunately, using an iteration count above 60 (which was very low and looked terrible) completely 
-                  broke the example, and I didn't know enough about OpenGL to fix it. I put the project aside for a little while.
-                </p>
+              <div class="panel-heading">
+                <h3 class="panel-title text-center">
+                  <a data-toggle="collapse" href="#collapse1">Click for build details!</a>
+                </h3>
               </div>
             </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <img src="assets/img/20200809_173400.jpg" alt="" class="img-fluid"></a>
+            <div id="collapse1" class="panel-collapse collapse"> -->
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <img src="assets/img/20200616_152013.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Raylib</h2>
+                      <p class="s-description text-center">
+                        When I started the project, I planned to use an OpenGL wrapper library called Raylib to build the 
+                        project. It even came with a sample Julia set shader, so I figured it would be an easy adaptation.
+                        Unfortunately, using an iteration count above 60 (which was very low and looked terrible) completely 
+                        broke the example, and I didn't know enough about OpenGL to fix it. I put the project aside for a little while.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <img src="assets/img/20200809_173400.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Starting OpenGL</h2>
+                      <p class="s-description text-center">
+                        Once I got laid off, I realized I had the opportunity to invest myself in learning OpenGL at a deeper level,
+                         from the start, instead of wrestling some code I didn't understand into doing what I wanted it to do. I followed
+                         along with some videos on youtube until I felt confident to try drawing my first fractal. Here is me comparing my 
+                         first Mandelbrot set against a reference image to make sure it doesn't look squished.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <img src="assets/img/20200907_170527.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Moving back to the Pi</h2>
+                      <p class="s-description text-center">
+                        Initially I developed on the Pi over xrdp. Much to my chagrin, when I tried to run my program on the Pi itself,
+                        I was met with a black screen. It turns out xrdp renders with the client's GPU, and I was targeting a version of 
+                        OpenGL that the Pi did not support. Once I modified everything to conform to OpenGL ES 3.1, I was greeted by my first
+                        Pi-native (and terribly slow) Mandelbrot!
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="service-content">
-                <h2 class="s-title">Starting OpenGL</h2>
-                <p class="s-description text-center">
-                  Once I got laid off, I realized I had the opportunity to invest myself in learning OpenGL at a deeper level,
-                   from the start, instead of wrestling some code I didn't understand into doing what I wanted it to do. I followed
-                   along with some videos on youtube until I felt confident to try drawing my first fractal. Here is me comparing my 
-                   first Mandelbrot set against a reference image to make sure it doesn't look squished.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="service-box">
-              <div class="service-ico">
-                <img src="assets/img/20200907_170527.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="service-content">
-                <h2 class="s-title">Moving back to the Pi</h2>
-                <p class="s-description text-center">
-                  Initially I developed on the Pi over xrdp. Much to my chagrin, when I tried to run my program on the Pi itself,
-                  I was met with a black screen. It turns out xrdp renders with the client's GPU, and I was targeting a version of 
-                  OpenGL that the Pi did not support. Once I modified everything to conform to OpenGL ES 3.1, I was greeted by my first
-                  Pi-native (and terribly slow) Mandelbrot!
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+            <!-- </div>
+          </div> 
+        </div> -->
       </div>
     </section><!-- End Services Section -->
 
@@ -266,7 +279,7 @@
                 </ul>
                 <p>I worked in a group home from 2017-2019. As a parting gift to to the residents and my coworkers, 
                   I decided to liven up our all-too-ordinary dishwasher a little. When the door is opened, it has a one in ten 
-                  chance of triggering one of a number of delightful sound effects, from <i>funky town</i> to flatulence.
+                  chance of triggering one of a number of delightful sound effects, from <i>Funky Town</i> to flatulence.
                 </p>
             </div>
           </div>
@@ -434,28 +447,6 @@
     </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-            <div class="credits">
-              <!--
-              All the links in the footer should remain intact.
-              You can delete the links only if you purchased the pro version.
-              Licensing information: https://bootstrapmade.com/license/
-              Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-            -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>
