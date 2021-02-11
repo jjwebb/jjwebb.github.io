@@ -75,6 +75,17 @@
 
   <!-- ======= Intro Section ======= -->
   <div id="home" class="intro route bg-image" style="background-image: url(assets/img/canoe.jpg);">
+    
+    <!-- <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <p>Text is here</p>
+        </div>
+        <div class="flip-card-back bg-image" style="background-image: url(assets/img/dishwasherbox1.PNG);">
+         <img src="assets/img/dishwasherbox1.PNG" alt="Avatar" style="width:300px;height:300px;"> 
+        </div> 
+      </div>
+    </div> -->
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
       <div class="table-cell">
@@ -243,6 +254,51 @@
                         I was met with a black screen. It turns out xrdp renders with the client's GPU, and I was targeting a version of 
                         OpenGL that the Pi did not support. Once I modified everything to conform to OpenGL ES 3.1, I was greeted by my first
                         Pi-native (and terribly slow) Mandelbrot!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <img src="assets/img/20201122_163105.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Speeding it up</h2>
+                      <p class="s-description text-center">
+                        One of the primary techniques I used to make the explorer more fluid was to render to a texture a fraction of the size of 
+                        the screen and sample it back, which gets a pretty-good approximation of the image to the screen in a fraction of the time. 
+                        See the video for more details!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <img src="assets/img/20201121_214025.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Making it feel embedded</h2>
+                      <p class="s-description text-center">
+                        That cursor in the middle of the screen was a nightmare to get rid of. Even after explicitly disabling the cursor in OpenGL and in X11, 
+                        it would reappear on waking from sleep. I finally got rid of it for good by creating a systemd service to run a cursor removal util. 
+                        A systemd service also starts the explorer first thing when the system boots.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-box">
+                    <div class="service-ico">
+                      <img src="assets/img/20201221_211150.jpg" alt="" class="img-fluid"></a>
+                    </div>
+                    <div class="service-content">
+                      <h2 class="s-title">Tying it all together</h2>
+                      <p class="s-description text-center">
+                        A Python script turns input from the knobs into keypress events. The script is started on reboot by a cron job. The signals coming from the 
+                        rotary encoders are quite noisy, and are debounced in software. With everything starting automatically, the table finally feels like a finished 
+                        product and requires neither muss nor fuss to operate.
                       </p>
                     </div>
                   </div>
